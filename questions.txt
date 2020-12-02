@@ -1,0 +1,19 @@
+Which of the following is NOT a color                                            | red           | blue           | green          | beautiful          | 4
+Finland is part of which continent                                               | Europe        | Asia           | Africa         | South America      | 1
+Which of the followins is NOT a keyword in Python                                | from          | donut          | break          | false              | 2
+What is the capital of Finland                                                   | Stockholm     | Oslo           | Helsinki       | New York           | 3
+Comic Sans, Times New Roman and Helvetica. What are they?                        | typefaces     | cars           | Pantone colors | tool manufacturers | 1
+Which of the following is NOT a social media service                             | Facebook      | TikTok         | Instagram      | Reuters            | 4
+Who is the current presidetn of Finland                                          | Tarja Halonen | Sauli Niinistö | Urho Kekkonen  | Mauno Koivisto     | 2
+How many corners in a pentagon                                                   | 4             | 5              | 6              | 7                  | 2
+How many degrees is the total of angels of a trianle                             | 90            | 180            | 360            | 720                | 2
+What is the biggest planet in our solar system                                   | Saturnus      | Mars           | Mercury        | Jupiter            | 4
+What is the capital of Sweden                                                    | Helsinki      | Stockholm      | Moscow         | New York City      | 2
+Which of the following is NOT a programming language                             | Python        | JavaScript     | Go             | Pikachu            | 4
+Which of the following is a Linux distribution                                   | Cowboy hat    | Fedora         | Top hat        | Baseball cap       | 2
+Which of the following is NOT a well known metal band                            | Arch Enemy    | Behemoth       | Nightwish      | Justin Bieber      | 4
+What is the first name of the singer of Ukranianian band Jinjer                  | Ludmila       | Tatiana        | Lisa           | Vladimir           | 2
+Fill in the question Scooter asks in one of their songs: "How much is the _____" | fish          | clock          | pain           | price              | 1
+Which of the follosing is not a Finnish band                                     | Stratovarius  | Nightwish      | Wintersun      | In Flames          | 4
+Who is going to be the president of the USA, starting Jan 20th 2021              | Donald Trump  | Kamala Harris  | Joe Biden      | Barack Obama       | 3
+Finland's flag consist of which colors                                           | red and blue  | red and white  | blue and white | blue and yellow    | 3
