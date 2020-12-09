@@ -20,8 +20,9 @@ def pick_questions():
             question = all_questions[i].split("|")
             for i in range(len(question)):
                 question[i] = question[i].strip()
+            # Keys are an easy way to keeep up with what are we printing and what's
+            # the correct answer so turn questions into dictionaries
             questions.append(dict(zip(keys, question)))
-            # questions.append(dict(zip(keys, all_questions[i].split("|"))))
     return questions
 
 

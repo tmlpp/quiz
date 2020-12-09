@@ -4,7 +4,7 @@ import pickle
 import os
 
 def create_hs_file():
-    """Create the 'high_scores.dat' file if it doest's exist."""
+    """Initialize the high_scores.dat file on first run."""
     try:
         if not os.path.exists("high_scores.dat"):
             with open("high_scores.dat", "wb") as hs_file:
@@ -21,11 +21,7 @@ def create_hs_file():
 
 
 def save_high_score(score, name):
-    """Save the player's result tu high scores list if the result is good enough"""
-
-    # create the file if doesn't exist
-    # if more than 10, pop the last one
-    # if 
+    """Save the player's score and name to high_scores.dat if the score is good enough"""
     try:
         with open("high_scores.dat", "rb") as hs_file:
             hs = pickle.load(hs_file)

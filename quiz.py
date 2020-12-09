@@ -6,6 +6,9 @@ from high_score import *
 
 
 def play_game(arg):
+    """
+    Go through the questions one at a time and wait for user to anser.
+    """
     questions = pick_questions()
     score = 0
 
@@ -16,6 +19,7 @@ def play_game(arg):
         for j in range(1, 5):
             print(str(j) + ".", questions[i].get(str(j)))
         while True:
+            # Check that the user's input is valid
             try:
                 answer = int(input("Answer: "))
             except ValueError:
@@ -30,6 +34,7 @@ def play_game(arg):
                 else:
                     print("Please use numbers 1–4 to answer. Or choose 0 to end the game.")
                     continue
+        # Tell the user if they got the question right
         if str(answer) == questions[i].get("correct"):
             print("CORRECT!")
             score += 1
@@ -40,11 +45,20 @@ def play_game(arg):
     print()
     print(f"FINAL SCORE: {score}")
     print("GAME OVER")
+    # Save high score
     if hs_enabled == True:
         save_high_score(score, name)
 
 
 def menu():
+    """Main menu of the game
+
+    The user can:
+    1) Play a new game
+    2) Show high scores
+    3) Quit the game
+    """
+
     while True:
         print()
         print("What do you want to do?")
