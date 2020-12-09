@@ -1,30 +1,8 @@
 #!/usr/bin/python
 
-import random
 import sys
+from questions import *
 from high_score import *
-
-QUESTIONS = 10
-
-def pick_questions():
-    """
-    Randomly choose questions from the questions.txt file.
-    
-    The number of questions to pick is defined by QUESTIONS
-    """
-
-    keys = ["question", "1", "2", "3", "4", "correct"]
-    questions = []
-    with open("questions.txt", "r") as f:
-        all_questions = f.readlines()
-        numbers = random.sample(range(len(all_questions)), QUESTIONS)
-        for i in numbers:
-            question = all_questions[i].split("|")
-            for i in range(len(question)):
-                question[i] = question[i].strip()
-            questions.append(dict(zip(keys, question)))
-            # questions.append(dict(zip(keys, all_questions[i].split("|"))))
-    return questions
 
 
 def play_game(arg):
@@ -32,6 +10,7 @@ def play_game(arg):
     score = 0
 
     for i in range(QUESTIONS):
+        print()
         print("### QUESTION {} ###".format(i + 1))
         print(questions[i].get("question") + "?")
         for j in range(1, 5):
@@ -52,12 +31,15 @@ def play_game(arg):
                     print("Please use numbers 1–4 to answer. Or choose 0 to end the game.")
                     continue
         if str(answer) == questions[i].get("correct"):
-            print("CORRECT!\n")
+            print("CORRECT!")
             score += 1
         else:
             print("Unfortunately that's incorrect.")
-            print("The correct answer was {}\n".format(questions[i].get(questions[i].get("correct"))))
+            print("The correct answer was {}".format(questions[i].get(questions[i].get("correct"))))
 
+    print()
+    print(f"FINAL SCORE: {score}")
+    print("GAME OVER")
     if hs_enabled == True:
         save_high_score(score, name)
 
