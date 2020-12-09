@@ -2,6 +2,11 @@
 
 This is the final exercise for _TTC2030 – Ohjelmoinnin perusteet_ class.
 
+## Installation and running
+
+1. Clone or copy the repository
+2. Run `quiz.py`
+
 ## Features
 
 - Runs a trivia game with 10 random questions read from a file with bunch of questions
