@@ -4,7 +4,7 @@ This is the final exercise for _TTC2030 – Ohjelmoinnin perusteet_ class.
 
 ## Installation and running
 
-1. Clone or copy the repository
+1. Clone/download the repository
 2. Run `quiz.py`
 
 ## Features
