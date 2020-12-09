@@ -27,7 +27,7 @@ def save_high_score(score, name):
     # if more than 10, pop the last one
     # if 
     try:
-        with open("high_scores.dat", "rb+") as hs_file:
+        with open("high_scores.dat", "rb") as hs_file:
             hs = pickle.load(hs_file)
             for i in range(len(hs)):
                 if score <= hs[i][0]:
@@ -39,7 +39,10 @@ def save_high_score(score, name):
                     else:
                         continue
             hs.pop(0)
+
+        with open("high_scores.dat", "wb") as hs_file:
             pickle.dump(hs, hs_file)
+
     except PermissionError:
         print("Unable to write to the high scores file.")
         
